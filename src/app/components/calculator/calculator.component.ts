@@ -16,10 +16,16 @@ export class CalculatorComponent implements OnInit {
   }
 
   public numClick(number: string){
+    if(this.result.length > 15){
+      return;
+    }
     this.result += number;
   }
 
   public operatorClick(opr: string){
+    if(this.result.length > 15){
+      return;
+    }
     this.result += opr;
   }
 
