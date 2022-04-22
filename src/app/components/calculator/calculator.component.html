@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 result">
+            {{ result }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 number">
+            <button type="button" class="btn" (click)="numClick('1')">1</button>
+        </div>
+        <div class="col-3 number">
+            <button type="button" class="btn" (click)="numClick('2')">2</button>
+        </div>
+        <div class="col-3 number">
+            <button type="button" class="btn" (click)="numClick('3')">3</button>
+        </div>
+        <div class="col-3 operator">
+            <button type="button" class="btn" (click)="operatorClick('*')">×</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 number">
+            <button type="button" class="btn" (click)="numClick('4')">4</button>
+        </div>
+        <div class="col-3 number">
+            <button type="button" class="btn" (click)="numClick('5')">5</button>
+        </div>
+        <div class="col-3 number">
+            <button type="button" class="btn" (click)="numClick('6')">6</button>
+        </div>
+        <div class="col-3 operator">
+            <button type="button" class="btn" (click)="operatorClick('-')">-</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 number">
+            <button type="button" class="btn" (click)="numClick('7')">7</button>
+        </div>
+        <div class="col-3 number">
+            <button type="button" class="btn" (click)="numClick('8')">8</button>
+        </div>
+        <div class="col-3 number">
+            <button type="button" class="btn" (click)="numClick('9')">9</button>
+        </div>
+        <div class="col-3 operator">
+            <button type="button" class="btn" (click)="operatorClick('+')">+</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 number radius-bottom-left">
+            <button type="button" class="btn" (click)="numClick('0')">0</button>
+        </div>
+        <div class="col-3 operator">
+            <button type="button" class="btn" (click)="calculate()">=</button>
+        </div>
+        <div class="col-3 operator radius-bottom-right">
+            <button type="button" class="btn" (click)="operatorClick('/')">÷</button>
+        </div>
+    </div>
+</div>
